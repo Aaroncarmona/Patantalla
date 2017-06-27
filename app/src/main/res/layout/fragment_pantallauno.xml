@@ -1,0 +1,492 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="carmonespi.gmail.com.patantalla.Pantallauno">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo_busqueda_rastreo"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dasboard_text_title_large"
+                    android:text="ECHO 00000000001"
+                    android:singleLine="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dasboard_text_title_small"
+
+                    android:text="Estado"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center|right"
+                android:layout_weight="1"
+                >
+
+                <ImageButton
+                    android:id="@+id/ibtnLocation"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_location_on_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/ibtnHeart"
+                    android:layout_marginRight="15dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/ic_favorite_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/ibtnShared"
+                    android:src="@drawable/ic_share_white"
+                    android:layout_width="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:paddingBottom="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:src="@drawable/ic_location_on_white_24dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_title_large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="999"/>
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="kmh"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:src="@drawable/ic_location_on_white_24dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_title_large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="999"/>
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="kmh"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:src="@drawable/ic_location_on_white_24dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_title_large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="999"/>
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="kmh"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:src="@drawable/ic_location_on_white_24dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_title_large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="999"/>
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="kmh"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:src="@drawable/ic_location_on_white_24dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_title_large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="999"/>
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="kmh"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:src="@drawable/ic_location_on_white_24dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_title_large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="999"/>
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="kmh"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:src="@drawable/ic_location_on_white_24dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_title_large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="999"/>
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="kmh"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:src="@drawable/ic_location_on_white_24dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_title_large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="999"/>
+                                <TextView
+                                    android:textSize="@dimen/dasboard_text_medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="kmh"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textSize="@dimen/dasboard_text_title_large"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dirrección"/>
+
+                        <TextView
+                            android:textSize="@dimen/dasboard_text_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tlaxcala 177 Col. Hipódromo"/>
+
+                        <TextView
+                            android:textSize="@dimen/dasboard_text_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CP. 06100, México D.F"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textSize="@dimen/dasboard_text_title_large"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Último reporte"/>
+
+                        <TextView
+                            android:textSize="@dimen/dasboard_text_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="14/06/2017 13:00:00 PM"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+    <!--ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="500dp"
+            android:layout_height="wrap_content">
+
+        </View>
+        <include layout="@layout/activity_main_cardview"/>
+        <include layout="@layout/activity_main_cardview"/>
+        <include layout="@layout/activity_main_cardview"/>
+        <include layout="@layout/activity_main_cardview"/>
+        <include layout="@layout/activity_main_cardview"/>
+        <include layout="@layout/activity_main_cardview"/>
+        <include layout="@layout/activity_main_cardview"/>
+        <include layout="@layout/activity_main_cardview"/>
+        <include layout="@layout/activity_main_cardview"/>
+        </LinearLayout>
+    </ScrollView-->
+
+
+
+</android.support.design.widget.CoordinatorLayout>
